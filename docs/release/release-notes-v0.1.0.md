@@ -38,7 +38,7 @@ and stores it as plain JSON files you can read, diff, edit, and delete.
 
 It is not a vector database and it does not do semantic search. It answers a
 narrower question, and if you need fuzzy recall you want a different library —
-[see "When NOT to use this"](https://github.com/jwatson1283/Polymem#when-not-to-use-this).
+[see "When NOT to use this"](https://github.com/alfredredwar/Polymem#when-not-to-use-this).
 Read that before installing.
 
 ### Why it is different
@@ -123,8 +123,8 @@ the old code:
 - **Not audited, not certified, no bug bounty.** No third-party security review
   has been performed.
 
-Full list: [What is NOT done yet](https://github.com/jwatson1283/Polymem#what-is-not-done-yet)
-and [SECURITY.md](https://github.com/jwatson1283/Polymem/blob/main/SECURITY.md).
+Full list: [What is NOT done yet](https://github.com/alfredredwar/Polymem#what-is-not-done-yet)
+and [SECURITY.md](https://github.com/alfredredwar/Polymem/blob/main/SECURITY.md).
 
 ### Requirements
 

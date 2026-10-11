@@ -5,7 +5,7 @@
 
   This is a draft launch post held in the repository. It has NOT been posted to
   Hacker News, Reddit, or anywhere else. No repository exists PUBLICLY yet:
-  github.com/jwatson1283/Polymem was created 2026-10-01 and is `private: true`,
+  github.com/alfredredwar/Polymem was created 2026-10-01 and is `private: true`,
   so an unauthenticated request — a reader, a search engine, HN — gets a 404.
   No announcement has been made.
 

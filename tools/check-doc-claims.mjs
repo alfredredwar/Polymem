@@ -689,12 +689,25 @@ check(
 // contributor means adding a line here, deliberately, with the reason — which
 // is the point: a new committer identity is a decision, not a default.
 const ALLOWED_IDS = new Set([
-  ['jwatson' + '1283', 'users.noreply.github.com'].join('@'),
+  ['alfred' + 'redwar', 'users.noreply.github.com'].join('@'),
   // GitHub's per-user-id form of the same identity. The id is not pinned
   // because it is an account detail that can change; the domain and the
   // handle are what make the address non-identifying.
-  String.raw`^[0-9]+\+jwatson1283@users\.noreply\.github\.com$`,
+  String.raw`^[0-9]+\+alfredredwar@users\.noreply\.github\.com$`,
 ].map((s) => s.toLowerCase()));
+
+// The allowlist holds two kinds of entry: an exact address, and a regex for the
+// per-user-id form whose numeric prefix is deliberately not pinned. `Set.has()`
+// only ever tests the first kind — a regex stored in a Set is compared as a
+// literal string and can never match — so evaluate the regex entries explicitly.
+const isAllowedId = (email) => {
+  const e = String(email || '').trim().toLowerCase();
+  for (const entry of ALLOWED_IDS) {
+    if (entry === e) return true;
+    if (entry.startsWith('^') && new RegExp(entry).test(e)) return true;
+  }
+  return false;
+};
 
 // The object database, not the ref list. --batch-all-objects needs no
 // reachability from HEAD, so an orphaned commit is enumerated exactly like a
@@ -759,7 +772,7 @@ for (const line of (identRun.stdout || '').split('\n')) {
   // A missing side is a failure, not an exemption: an empty email is the one
   // value that can never match the allowlist, so it lands here on its own.
   for (const [side, who, email] of [['author', an, ae], ['committer', cn, ce]]) {
-    if (!ALLOWED_IDS.has(String(email || '').trim().toLowerCase())) {
+    if (!isAllowedId(email)) {
       badIdents.push(
         `${who || '<no name>'} <${email || 'no email'}> as ${side} of ${short}` +
         `${offRef ? ' (off-ref: gc will remove it)' : ''}`,

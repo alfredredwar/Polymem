@@ -332,5 +332,5 @@ without opening the README:
   tags. It does not embed, does not read claims, and does not match
   synonyms.
 
-[Unreleased]: https://github.com/jwatson1283/Polymem/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/jwatson1283/Polymem/releases/tag/v0.1.0
+[Unreleased]: https://github.com/alfredredwar/Polymem/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/alfredredwar/Polymem/releases/tag/v0.1.0

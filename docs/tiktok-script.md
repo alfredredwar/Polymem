@@ -95,7 +95,7 @@ credibility of the video rests on these being true.
 ## CTA — 1:05–1:12
 
 > "If your agent needs to remember *how it did things*, not just what's
-> true — `github.com/jwatson1283/Polymem`.
+> true — `github.com/alfredredwar/Polymem`.
 >
 > Five hundred forty-eight tests. Zero dependencies. And it tells you where
 > it will fail."

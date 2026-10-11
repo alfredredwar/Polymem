@@ -4,7 +4,7 @@
 ![Node](https://img.shields.io/badge/node-%3E%3D18-5FA04E.svg)
 ![Dependencies](https://img.shields.io/badge/dependencies-0-success)
 
-[![CI](https://github.com/jwatson1283/Polymem/actions/workflows/ci.yml/badge.svg)](https://github.com/jwatson1283/Polymem/actions/workflows/ci.yml)
+[![CI](https://github.com/alfredredwar/Polymem/actions/workflows/ci.yml/badge.svg)](https://github.com/alfredredwar/Polymem/actions/workflows/ci.yml)
 
 <!--
   No npm badge: `polymem` is not published yet, so img.shields.io/npm/v/polymem
@@ -73,7 +73,7 @@ on this page.
 This is the short version, because it is more persuasive than any feature list
 and it is the reason the README reads the way it does.
 
-Polymem was extracted from [OmegaShell](https://github.com/jwatson1283), where
+Polymem was extracted from [OmegaShell](https://github.com/alfredredwar), where
 it runs in production as the backend memory layer. It was then audited
 adversarially — deliberately broken, on purpose, by someone looking for reasons
 not to trust it. **Five real defects, each reproduced before and after, each now
@@ -406,7 +406,7 @@ Requires Node >= 18. Zero dependencies, so there is nothing to resolve.
 Or from source:
 
 ```bash
-git clone https://github.com/jwatson1283/Polymem.git
+git clone https://github.com/alfredredwar/Polymem.git
 cd Polymem
 npm test
 ```
